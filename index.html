@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables and JS</title>
+    <link rel="icon" href="./img/favicon.png" type="image/gif" sizes="16x16" />
+    <link rel="stylesheet" href="./css/fontawesome.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <label for="body-back">Body Background:</label>
+    <input class="body-bg" type="color" name="body-back" value="#ff7e4b">
+    <div class="container-fluid">
+      <h2>Update CSS Variables with <span class="hl">JS</span></h2>
+      <div class="controls pb-3">
+        <label for="spacing">Spacing:</label>
+        <input
+          type="range"
+          name="spacing"
+          min="10"
+          max="200"
+          value="10"
+          data-sizing="px"
+        />
+        <label for="blur">Blur:</label>
+        <input
+          type="range"
+          name="blur"
+          min="0"
+          max="200"
+          value="0"
+          data-sizing="px"
+        />
+        <label for="color">color</label>
+        <input type="color" name="base" value="#00b7ff" />
+      </div>
+      <img src="https://source.unsplash.com/collection/190727/800x500" />
+    </div>
+
+    <!-- Scripts -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
